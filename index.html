@@ -170,7 +170,9 @@
     <h2>Contact Form</h2>
     <form action="https://formspree.io/f/xrbjldoe" method="POST">
 
-      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_captcha" value="true">
+      <!-- honeypot hidden from users -->
+       <input type="text" name="_gotcha" style="display:none" />
 
       <label for="name">Your Name:</label>
       <input type="text" name="name" id="name" placeholder="Your Name" required />
